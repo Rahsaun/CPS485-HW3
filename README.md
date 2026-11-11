@@ -11,12 +11,10 @@ Let $H$ contain the classifier $h_T$ for every finite set $T$ of positive intege
 
 **The hypothesis class $H$ is not PAC-learnable because it has infinite VC dimension.**
 
-Let $n$ be any positive integer and consider the set $S = \{1, 2, \ldots, n\}$. Choose any labeling $y: S \to \{0,1\}$ and define
+Let $n$ be any positive integer and consider the set `S = {1, 2, …, n}`. Choose any labeling `y: S → {0, 1}` and define
 
-$$
-T = \{i \in S : y(i)=1\}.
-$$
+`T = {i ∈ S : y(i) = 1}`.
 
 Because $T \subseteq S$, the set $T$ is finite, so $h_T$ belongs to $H$. For every $i \in S$, the classifier $h_T$ predicts $1$ exactly when $i \in T$, which is exactly when $y(i)=1$. Thus $h_T(i)=y(i)$ for every $i \in S$. This also covers the labeling that assigns $0$ to every point, since $H$ includes $h_{\varnothing}$.
 
-Therefore $H$ realizes every labeling of $S$, so it shatters $S$. Since $n$ was arbitrary, $H$ can shatter sets of arbitrarily large finite size. Hence $\operatorname{VCdim}(H)=\infty$. By the fundamental theorem of statistical learning, a binary hypothesis class is distribution-free PAC-learnable only if it has finite VC dimension. Therefore $H$ is not PAC-learnable.
+Therefore $H$ realizes every labeling of $S$, so it shatters $S$. Since $n$ was arbitrary, $H$ can shatter sets of arbitrarily large finite size. Hence the VC dimension of $H$ is infinite. By the fundamental theorem of statistical learning, a binary hypothesis class is distribution-free PAC-learnable only if it has finite VC dimension. Therefore $H$ is not PAC-learnable.
