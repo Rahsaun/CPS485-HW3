@@ -1,7 +1,7 @@
 # CPS485 Homework 3 — PAC Learnability
 
 **Group draft**  
-**Group members:** Rahsaun Jeffrey and [collaborator name]
+**Group members:** Rahsaun Jeffrey and Owen Bowers]
 
 ## Problem 1
 
